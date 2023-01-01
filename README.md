@@ -3,3 +3,5 @@ A small lab to understand web-cache poisoning. This lab is made using a simple e
 
 ### To run on the local machine:
 `node app.js`
+
+## Execute alert(1) will solve the lab/
