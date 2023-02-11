@@ -4,7 +4,7 @@ const cache=new nodeCache({stdTTL:10});
 
 password="12345";
 
-apikey="asdfghj"
+apikey="asdfghj";
 
 app.get("/",(req,res)=>{
     if(cache.has("poison")){
