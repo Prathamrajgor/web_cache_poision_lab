@@ -2,10 +2,6 @@ const app=require("express")()
 const nodeCache=require("node-cache")
 const cache=new nodeCache({stdTTL:10});
 
-password="12345";
-
-apikey="asdfghj";
-
 app.get("/",(req,res)=>{
     if(cache.has("poison")){
         console.log(`Existing cache found for this reuest:  ${cache.get("poison")}`);
