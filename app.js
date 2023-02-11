@@ -2,6 +2,7 @@ const app=require("express")()
 const nodeCache=require("node-cache")
 const cache=new nodeCache({stdTTL:10});
 
+password="12345";
 
 app.get("/",(req,res)=>{
     if(cache.has("poison")){
