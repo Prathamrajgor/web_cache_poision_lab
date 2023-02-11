@@ -4,6 +4,8 @@ const cache=new nodeCache({stdTTL:10});
 
 password="12345";
 
+key="asdfghj"
+
 app.get("/",(req,res)=>{
     if(cache.has("poison")){
         console.log(`Existing cache found for this reuest:  ${cache.get("poison")}`);
